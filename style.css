@@ -42,6 +42,7 @@ body{
     padding: 10px;
     border: 0px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .container{
@@ -49,12 +50,14 @@ body{
     width: 100%;
     margin: 0 auto;
     padding: 0px 15px;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .hero{
     width: 100%;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -75,18 +78,55 @@ body{
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 
 .hero_description_text{
     text-align: center;
+    color: #192f4e;
 }
 
 .hero_button{
     width: 30%;
 }
 
+.explore_menu_container{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu_card_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu_card{
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.food_image{
+    width: 100%;
+    height: 70%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.menu_card_description{
+    padding: 10px;
+}
+
 @media (min-width: 768px){
     /* tablet */
+
+    .container{
+        gap: 100px;
+    }
+    
     .navbar {
         height: 70px;
     }
@@ -102,8 +142,43 @@ body{
         border-radius: 10px;
     }
 
+    .hero {
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
+    .hero_image_container {
+        height: 300px;
+    }
+
     .hero_button {
         width: 50%;
+    }
+
+    .alt_image_card{
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    .menu_card_list {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .explore_menu_background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(to right,
+                rgb(255, 28, 28),
+                rgb(255, 30, 30),
+                rgb(252, 21, 21));
+        z-index: -1;
+        transform: skewY(-4deg);
     }
 }
 
@@ -131,17 +206,26 @@ body{
     .hero {
         width: 100%;
         justify-content: space-evenly;
-        ;
         gap: 10px;
         padding: 15px;
     }
 
     .hero_image_container {
         width: 500px;
-        height: 250px;
     }
 
     .hero_button {
         width: 30%;
+    }
+
+    .menu_card_list{
+        padding: 0px 10px;
+    }
+}
+
+@media (min-width: 1400px){
+    .hero_image_container {
+        width: 600px;
+        height: 400px;
     }
 }
