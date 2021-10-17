@@ -172,6 +172,38 @@ body{
     padding: 10px;
 }
 
+.banner_container{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner_text{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.banner_image_container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.banner_image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
 .footer_navbar{
     width: 100%;
     position: relative;
@@ -299,12 +331,6 @@ body{
         height: 60%;
     }
 
-    /* .updated_form {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    } */
-
     .updated_input_bar {
         border-radius: 5px;
         height: 40px;
@@ -313,6 +339,10 @@ body{
 
     .updated_submit_button{
         width: 200px;
+    }
+
+    .banner_image_container {
+        height: 100px;
     }
 
     .footer_navbar {
