@@ -76,6 +76,10 @@ body{
     gap: 10px;
 }
 
+.hero_description_text{
+    text-align: center;
+}
+
 .hero_button{
     width: 30%;
 }
