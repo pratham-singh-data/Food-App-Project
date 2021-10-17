@@ -1,0 +1,121 @@
+/* eliminate browser styles */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* background is a bluish gray */
+body{
+    background-color: rgb(190, 214, 214);
+    font-family: Rubik, Arial;
+}
+
+.navbar{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 5px;
+}
+
+.navbar_brand{
+    height: 50px;
+    width: 100px;
+}
+
+.navbar_brand_image{
+    width: 100%;
+    height: 100%;
+}
+
+.button_primary{
+    background-image: linear-gradient(
+        to right,
+        rgb(255, 28, 28),
+        rgb(255, 30, 30),
+        rgb(252, 21, 21)
+    );
+
+    color: white;
+    padding: 10px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.hero{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.hero_image_container{
+    width: 100%;
+    height: 200px;
+}
+
+.hero_image{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 768px){
+    /* tablet */
+    .navbar {
+        height: 70px;
+    }
+
+    .navbar_brand {
+        height: 80px;
+        width: 150px;
+    }
+
+    .button_primary {
+        padding: 18px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1020px) {
+    /* laptop */
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar_brand {
+        height: 80px;
+        width: 150px;
+    }
+
+    .button_primary {
+        padding: 13px;
+        font-size: 15px;
+        border-radius: 10px;
+    }
+
+    .container {
+        width: 1100;
+    }
+
+    .hero {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .hero_image_container {
+        width: 500px;
+        height: 200px;
+    }
+}
