@@ -151,6 +151,27 @@ body{
     border-radius: 10px;
 }
 
+.updated_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.updated_form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.updated_input_bar{
+    border-radius: 5px;
+    border: rgb(82, 107, 128) 2px solid;
+    height: 30px;
+    width: 60%;
+    padding: 10px;
+}
+
 .footer_navbar{
     width: 100%;
     position: relative;
@@ -276,6 +297,22 @@ body{
     .restaurant_three {
         width: 65%;
         height: 60%;
+    }
+
+    /* .updated_form {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    } */
+
+    .updated_input_bar {
+        border-radius: 5px;
+        height: 40px;
+        width: 600px;
+    }
+
+    .updated_submit_button{
+        width: 200px;
     }
 
     .footer_navbar {
